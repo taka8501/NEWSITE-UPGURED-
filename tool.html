@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" /> 
+    <title>taka8501のサイト</title>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+        <li class="current"><a href=home.html>Home</a></li>
+        <li><a href=about.html>about</a></li>
+        <li><a href=tool.html>ブログ</a></li>
+        <li><a href=x.html>x/旧Twitter</a></li>
+        <li><a href=kikaku.html>計画中の企画一覧</a></li>
+      
+        </ul>
+        </nav>
+      
+        <h1>制作中....</h1>
+        
+
+        <p>現在時刻は<span id="real-time"></span></p>
+
+        <script type="text/javascript">
+      function Time() {
+         var realTime = new Date();
+         var hour = realTime.getHours();
+         var minutes  = realTime.getMinutes();
+         var seconds  = realTime.getSeconds();
+         var text = hour + ":" + minutes + ":" + seconds;
+         document.getElementById("real-time").innerHTML = text;
+      }
+      setInterval('Time()',1000);
+        </script>
+</body>
+</html>
